@@ -9,10 +9,12 @@ import org.spongepowered.asm.mixin.Overwrite;
 public abstract class UserWhiteListMixin {
     /**
      * @author 猫
-     * @reason 使白名单匹配名字而不再匹配uuid
+     * @reason 使白名单匹配名字而不再匹配 uuid
      */
     @Overwrite
     protected String getKeyForUser(GameProfile p_11458_) {
-        return p_11458_.getName();
+        // 使用全小写
+        // TODO 是的 这是个妥协的解决方案
+        return p_11458_.getName().toLowerCase();
     }
 }
