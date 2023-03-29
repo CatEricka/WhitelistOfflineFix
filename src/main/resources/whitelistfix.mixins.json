@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "catericka.github.io.whitelistfix.mixins",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "whitelistfix.refmap.json",
+  "mixins": [
+    "UserWhiteListMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
